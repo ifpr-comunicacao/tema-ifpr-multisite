@@ -1,2 +1,2 @@
-# tema-ifpr-multisite
-Tema do Site Institucional do IFPR na sua versão multisite
+# IFPR Wordpress Template
+ This repository contains the files for the development of the IFPR Wordpress Template

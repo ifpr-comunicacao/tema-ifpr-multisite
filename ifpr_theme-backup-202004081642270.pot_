@@ -1,0 +1,210 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ifpr_theme_v1.01\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-08 16:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.2; wp-5.4"
+
+#: comments.php:46
+msgctxt "Comentários antigos"
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: functions.php:62
+msgid "Coluna Central"
+msgstr ""
+
+#: functions.php:50
+msgid "Coluna Direita"
+msgstr ""
+
+#: functions.php:38
+msgid "Coluna Esquerda"
+msgstr ""
+
+#: comments.php:45
+msgid "Navegação de comentários"
+msgstr ""
+
+#: comments.php:52
+msgctxt "Os comentários estão fechados"
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:25
+#, php-format
+msgctxt "comments title"
+msgid "One thought on \"%2$s\""
+msgid_plural "%1$s thoughts on \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the template
+msgid "Demonstrações Contábeis"
+msgstr ""
+
+#: archive.php:23 tag.php:23
+msgid "Desculpe, nenhuma not&iacute;cia foi publicada neste m&ecirc;s."
+msgstr ""
+
+#: page-eixos.php:52 page-highlight.php:30 page-manual-servidor.php:40
+#: page-contabil.php:26 page-campi.php:27 page.php:49 attachment.php:30
+#: page-root.php:30 404.php:17 single.php:65 page-manual-servidor-root.php:42
+#: search.php:25 page-cursos.php:47
+msgid "Desculpe, nenhuma p&aacute;gina correspode ao seu crit&eacute;rio."
+msgstr ""
+
+#. Name of the template
+msgid "Eixos"
+msgstr ""
+
+#: functions.php:86
+msgid "Endereco"
+msgstr ""
+
+#: functions.php:87
+msgid "Endereco do campus."
+msgstr ""
+
+#. URI of the theme
+msgid "https://reitoria.ifpr.edu.br"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.ifpr.edu.br"
+msgstr ""
+
+#. Name of the theme
+msgid "ifpr_theme_v1.01"
+msgstr ""
+
+#: functions.php:63
+msgid "Itens exibidos na coluna central."
+msgstr ""
+
+#: functions.php:51
+msgid "Itens exibidos na coluna direita."
+msgstr ""
+
+#: functions.php:39
+msgid "Itens exibidos na coluna esquerda."
+msgstr ""
+
+#: functions.php:75
+msgid "Itens exibidos no rodape."
+msgstr ""
+
+#: header.php:54 header.php:58
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#. Name of the template
+msgid "Manual do Servidor"
+msgstr ""
+
+#. Name of the template
+msgid "Manual do Servidor - links"
+msgstr ""
+
+#: functions.php:139
+msgid "Nav Manual do Servidor"
+msgstr ""
+
+#: functions.php:138
+msgid "Nav Observatorio"
+msgstr ""
+
+#: functions.php:137
+msgid "Nav Servidor"
+msgstr ""
+
+#: functions.php:136
+msgid "Nav Superior"
+msgstr ""
+
+#: comments.php:47
+msgctxt "Comentários novos"
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: functions.php:122
+msgid "Nonmodal"
+msgstr ""
+
+#: functions.php:123
+msgid "Nonmodal do rodape."
+msgstr ""
+
+#. Name of the template
+msgid "Nossos cursos"
+msgstr ""
+
+#. Name of the template
+msgid "Observatório"
+msgstr ""
+
+#: functions.php:391
+msgid "Page"
+msgstr ""
+
+#. Author of the theme
+msgid "Pedro Paulo B. Grein"
+msgstr ""
+
+#: header.php:56
+msgctxt "placeholder"
+msgid "Pesquisar no site"
+msgstr ""
+
+#. Name of the template
+msgid "Página com imagem em destaque"
+msgstr ""
+
+#. Name of the template
+msgid "Página de Campi"
+msgstr ""
+
+#. Name of the template
+msgid "Página do Servidor"
+msgstr ""
+
+#. Name of the template
+msgid "Raiz de menu"
+msgstr ""
+
+#: functions.php:74
+msgid "Rodape"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Up to date revision of the Ifet theme, implementing responsiveness with "
+"bootstrap. All the WP code was revised as well."
+msgstr ""
+
+#: functions.php:111
+msgid "Video do YouTube na direita."
+msgstr ""
+
+#: functions.php:99
+msgid "Video do YouTube na esquerda."
+msgstr ""
+
+#: functions.php:98
+msgid "Video01"
+msgstr ""
+
+#: functions.php:110
+msgid "Video02"
+msgstr ""

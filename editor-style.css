@@ -1,0 +1,171 @@
+/* open-sans-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('assets/webfonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		 url('assets/webfonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('assets/webfonts/open-sans-v34-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		 url('assets/webfonts/open-sans-v34-latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-700 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('assets/webfonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		 url('assets/webfonts/open-sans-v34-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-700italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url('assets/webfonts/open-sans-v34-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		 url('assets/webfonts/open-sans-v34-latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*{
+    font-family: 'Open Sans';
+}
+
+.wp-block.grid-group-2-col>.wp-block-group__inner-container{
+    display: grid;
+    font-family: 'Open Sans';
+    -ms-grid-columns: minmax(270px, 1fr) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 1rem;
+}
+
+.cartao > div figure, .cartao > div img {
+    border-radius: 50%;
+    grid-area: foto;
+    justify-self: center;
+    margin: 0 1rem 0 0;
+    width: 80px;
+  }
+
+.cartao {
+    border: 1px solid lightgrey;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao>div{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-areas:
+    "foto nome   nome  " 
+    "foto cargo  cargo   " 
+    "foto email  email   " 
+    "foto fone   fone  " 
+    "foto endereco endereco" 
+    "foto cv-cl1   cv-cl1  " 
+    "foto agenda   cv    ";
+    height: 100%;
+    padding: 1rem;
+}
+
+.cartao > div p a {
+    color: slategray;
+    text-decoration: none;
+  }
+
+.cartao > div .nome {
+    font-size: 1rem;
+    font-weight: bold;
+    grid-area: nome;
+    margin:0 0 0.25rem 0;
+  }
+
+.cartao > div .cargo {
+    color: darkgreen;
+    grid-area: cargo;
+    margin:0 0 0.25rem 0;
+}
+
+.cartao > div .link-email, .cartao > div .link-web {
+    font-size: 0.75rem;
+    grid-area: email;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .icone-facebook::before, .icone-mais::before, .icone-cargo::before, .icone-projetos::before, .icone-equipamentos::before, .icone-responsavel::before, .icone-seta-dir::before, .icone-campus::before, .icone-area::before, .icone-agenda::before, .link-util::before, .link-email::before, .link-tel::before, .titulo-legislacao::before, .titulo-processo::before, .link-excel::before, .icone-cv::before, .icone-cv-cl1::before, .icone-doc::before, .link-web::before, .btn-menu::after, .icone-ptd::before, .i-link-externo li::after, .link-endereco::before, .icone-chevron-dir::after, .icone-video::before, .icone-foto::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 0.25rem;
+    text-align: center;
+    width: 1.25rem;
+    display: inline-block;
+    color: dimgrey;
+  }
+
+  .cartao > div .link-tel {
+    font-size: 0.75rem;
+    grid-area: fone;
+    margin:0 0 0.5rem 0;
+    ;
+  }
+
+  .cartao > div .link-endereco {
+    font-size: 0.75rem;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: endereco;
+    margin:0 0 0.5rem 0;
+  }
+
+.cartao > div .icone-agenda {
+    font-size: 0.75rem;
+    grid-area: agenda;
+    margin:0;
+  }
+
+.cartao .icone-cv, .cartao > div .icone-cv {
+    font-size: 0.75rem;
+    grid-area: cv;
+    margin:0;
+  }
+
+  
+.icone-agenda::before {
+    font-weight: 400;
+    content: "\f073";
+  }
+
+.icone-cv::before, .icone-cv-cl1::before {
+    font-weight: 400;
+    content: "\f2bb";
+}
+
+.link-email::before {
+    font-weight: 400;
+    content: "\f0e0";
+}
+
+.link-tel::before {
+    content: "\f879";
+}
+
+.link-endereco::before {
+    content: "\f5a0";
+}
+
+.wp-block-paragraph {
+  line-height: 1.5;
+}

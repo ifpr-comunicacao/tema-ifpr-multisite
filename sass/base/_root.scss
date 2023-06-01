@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+/* ==============================
+ * Abstracts | Root
+ * ------------------------------ */
+:root {
+  /* COLORS */
+  @each $color, $shades in $colors {
+    @each $key, $value in $shades {
+      --clr-#{$color}-#{$key}: #{$value};
+    }
+  }
+}

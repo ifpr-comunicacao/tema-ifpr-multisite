@@ -1,0 +1,179 @@
+/*------------------------------------*\
+ #ICONES
+\*------------------------------------*/
+  .icone-twitter::before,
+  .icone-facebook::before,
+  .icone-linkedin::before,
+  .icone-instagram::before,
+  .icone-youtube::before{
+      font-family: "Font Awesome 5 Brands";
+      margin-right: 0.25rem;
+      text-align: center;
+      min-width: 1.25rem;
+      display: inline-block;
+  }
+  
+  .icone-tel::before,
+  .icone-baixar::before,
+  .icone-mais::before,
+  .icone-cargo::before,
+  .icone-projetos::before,
+  .icone-equipamentos::before,
+  .icone-responsavel::before,
+  .icone-seta-dir::before,
+  .icone-campus::before,
+  .icone-area::before,
+  .icone-agenda::before,
+  .link-util::before,
+  .link-email::before,
+  .link-tel::before,
+  .titulo-legislacao::before,
+  .titulo-processo::before,
+  .link-excel::before,
+  .icone-cv::before,
+  .icone-cv-cl1::before,
+  .icone-doc::before,
+  .link-web::before,
+  .btn-menu::after,
+  .icone-ptd::before,
+  .i-link-externo li::after,
+  .link-endereco::before,
+  .icone-chevron-dir::after,
+  .icone-video::before,
+  .icone-foto::before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 0.25rem;
+      text-align: center;
+      min-width: 1.25rem;
+      display: inline-block;
+  }
+  
+  .link-util::before,
+  .link-web::before{
+    content: "\f0c1";
+  }
+  
+  .link-email::before {
+    font-weight: 400;
+    content: "\f0e0";
+  }
+  
+  .link-tel::before,
+  .icone-tel::before {
+    content: "\f879";
+  }
+  
+  .titulo-legislacao::before {
+    font-weight: 400;
+    content: "\f0c5";
+  }
+  
+  .titulo-processo::before {
+    font-weight: 400;
+    content: "\f022";
+  }
+  
+  .icone-agenda::before{
+    font-weight: 400;
+    content: "\f073";
+  }
+  
+  .link-excel::before{
+    font-weight: 400;
+    content: "\f1c3";
+  }
+  
+  .icone-area::before{
+    content: "\f86d";
+  }
+  
+  .icone-campus::before{
+    content: "\f66f";
+  }
+  
+  .icone-seta-dir::before{
+      content: "\f0a9";
+  }
+  
+  .icone-projetos::before{
+    content: "\f0ae";
+  }
+  
+  .icone-equipamentos::before{
+    content: "\f49e";
+  }
+  
+  .icone-responsavel::before{
+    content: "\f4fc";
+  }
+  
+  .icone-cargo::before{
+    font-weight: 400;
+    content: "\f2c2";
+  }
+  
+  .icone-mais::before{
+    content: "\f0fe";
+  }
+  
+  .icone-cv::before,
+  .icone-cv-cl1::before {
+    font-weight: 400;
+    content: "\f2bb";
+  }
+  
+  .icone-doc::before{
+    font-weight: 400;
+    content: "\f15c";
+  }
+  
+  .i-link-externo li::after{
+    color: var(--verde-link);
+    content: "\f35d";
+    font-size: 0.75rem;
+    padding: 0 0 0.25rem 0.5rem;
+  }
+  
+  .btn>a:hover{
+      text-decoration: none;
+  }
+  
+  .icone-chevron-dir::after{
+    color: var(--verde-link);
+    content:"\f054";
+    margin-left: 0.5rem;
+  }
+  
+  .link-endereco::before {
+      content: "\f5a0";
+  }
+  
+  .icone-facebook::before{
+      content: "\f09a";
+  }
+  
+  .icone-instagram::before{
+      content: "\f16d";
+  }
+  
+  .icone-linkedin::before{
+      content: "\f08c";
+  }
+  
+  .icone-youtube::before{
+      content: "\f167";
+  }
+  
+  .icone-twitter::before{
+      content: "\f099";
+    }
+  
+  .icone-video::before{
+      content: "\f03d";
+  }
+  
+  .icone-foto::before{
+      content: "\f03e";
+      font-weight: 400;
+  }

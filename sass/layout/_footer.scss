@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+
+/* ==============================
+ * Layout | Footer
+ * ------------------------------ */
+
+footer{
+    .wp-block-heading{
+        font-size: 1rem;
+    }
+    .wp-widget-group__inner-blocks{
+        p{
+            font-size: 0.75rem;
+        }
+    }
+}

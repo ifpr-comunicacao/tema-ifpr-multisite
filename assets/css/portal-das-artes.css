@@ -1,0 +1,437 @@
+/* PORTAL DAS ARTES */
+.portal #sidebar__esquerda{
+	top:-49px;
+}
+
+.topo-portal{
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+	z-index:3000;
+}
+
+#saiba-mais {
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, #ccc,#dee2e6,#e9ecef);
+	border-color: #dee2e6;
+}
+
+.portal-welcome{
+    background-size: cover;
+    background-position: center;
+	color: #fff;
+	min-height: calc(100vh - 225px);
+}
+
+.portal-welcome > small {
+    align-self: flex-end;
+	display: block;
+    padding-top: 1rem;
+    position: relative;
+	text-align:center;
+	width: 100%;
+}
+
+.portal-menu-toggle{
+	align-items: center;
+    cursor: pointer;
+	background-color: green;
+	border-radius: 18px;
+	color: #fff;
+	font-size: 1rem;
+	padding: .5rem;
+	margin: 1rem;
+    padding-left: 1rem;
+}
+
+.menu-toggle-open{
+	background-color: hsla(0, 0%, 60%, 1);
+	border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.mobile-open{
+    background-color: hsl(0,0%,60%);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+	margin: -16px 1rem 1rem 1rem;
+	max-height: calc(100vh - 225px);
+	overflow-y: scroll;
+    padding: 0 .5rem;
+	position: absolute;
+    top: 66px;
+}
+
+.portal-logo {
+	align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.portal-logo>a{
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 0 .25rem;
+	text-decoration: none;
+}
+
+.marca-topo-portal {
+    max-height: 64px;
+    margin: 1rem;
+}
+
+.nav-portal{
+	font-size: .9rem;
+	text-align: left;
+}
+
+.nav-portal>.nav{
+	align-items: center;
+	padding: .5rem 0;
+}
+
+.nav-portal li {
+	align-items: center;
+	display: flex;
+	margin: .25rem;
+	width: 100%;
+}
+
+.nav-portal a{
+	background: #fff;
+	border: 2px solid;
+	border-radius: 19px;
+	color: black;
+	padding:.42rem;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+}
+
+.nav-portal a::before{
+	font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+	padding-right: .5rem;
+    font-size: 1.1rem;
+	margin-bottom: -1px;
+}
+
+.nav-portal a:hover::before,
+.nav-portal  a.active::before {
+	color:#fff;
+}
+
+.nav-portal a:hover,
+.nav-portal .active {
+	color: #fff;
+}
+
+.portal-agentes-culturais>a {
+    border-radius: 19px;
+    border-color: #dc3545;
+}
+
+.portal-agentes-culturais>a:hover,
+.portal-agentes-culturais>.active{
+    background-color: #dc3545;
+}
+
+.portal-agentes-culturais a::before {
+    content: "\f5b8";
+    color: #dc3545;
+}
+
+#agentes-culturais,
+#projetos-de-ensino{
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, #dc3545,#e36370,#dc3545);
+	border-color: #dc3545;
+}
+
+.portal-eventos>a {
+    border-radius: 19px;
+    border-color: #0a9ddb;
+}
+
+.portal-eventos a::before{
+	content: "\f073";
+    color: #0a9ddb;
+}
+
+.portal-eventos>a:hover,
+.portal-eventos>.active{
+    background-color: #0a9ddb;
+}
+
+#eventos,
+#bibliotecas{
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, hsl(198, 91%, 45%),hsl(198, 91%, 35%),hsl(198, 91%, 25%));
+	border-color: hsl(198, 91%, 45%);
+}
+
+.portal-cursos>a {
+    border-radius: 19px;
+    border-color: #f38e11;
+}
+
+.portal-cursos a::before{
+	content: "\f19d";
+   color: #f38e11;
+	font-weight:900;
+}
+
+#cursos-ofertados-na-area,
+#politicas-institucionais-de-cultura{
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, hsl(33, 90%, 51%),hsl(33, 90%, 41%),hsl(33, 90%, 31%));
+	border-color: hsl(33, 90%, 51%);
+}
+
+.portal-cursos>a:hover,
+.portal-cursos>.active {
+    background-color: #f38e11;
+}
+
+.portal-materiais>a:hover,
+.portal-materiais>.active {
+    background-color: #654984;
+}
+
+.portal-materiais>a {
+    border-radius: 19px;
+    border-color: #654984;
+}
+
+.portal-materiais a::before{
+	content: "\f1ea";
+    color: #654984;
+}
+
+#materiais-sobre-arte-e-cultura,
+#nucleos-de-arte-e-cultura {
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, hsl(268, 29%, 40%),hsl(268, 29%, 30%),hsl(268, 29%, 20%));
+	border-color: hsl(268, 29%, 40%);
+}
+
+.portal-pesquisa>a:hover,
+.portal-pesquisa>.active {
+    background-color: #5aab3b;
+}
+
+.portal-pesquisa>a {
+    border-color: #5aab3b;
+}
+
+.portal-pesquisa a::before{
+	content: "\f0eb";
+    color: #5aab3b;
+}
+
+#projetos-de-pesquisa,
+#galeria {
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, hsl(103, 49%, 45%),hsl(103, 49%, 35%),hsl(103, 49%, 25%));
+	border-color: hsl(103, 49%, 45%);
+}
+
+.portal-extensao>a:hover,
+.portal-extensao>.active {
+    background-color: #8c2155;
+}
+
+.portal-extensao>a {
+    border-color: #8c2155;
+}
+
+.portal-extensao a::before{
+	content: "\f0b2";
+    color: #8c2155;
+	font-weight: bold;
+}
+
+#projetos-de-extensao,
+#politicas-publicas-de-cultura {
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, #8c2155,#8c2155,#8c2155);
+	border-color: #8c2155;
+}
+
+
+.portal-ensino>a:hover,
+.portal-ensino>.active {
+    background-color: #dc3545;
+}
+
+.portal-ensino>a {
+    border-color: #dc3545;
+}
+
+.portal-ensino a::before{
+	content: "\f501";
+    color: #dc3545;
+	font-weight: bold;
+}
+
+.portal-bibliotecas>a:hover, .portal-bibliotecas>.active {
+    background-color: #0a9ddb;
+}
+
+.portal-bibliotecas>a {
+    border-color: #0a9ddb;
+}
+
+.portal-bibliotecas a::before{
+	content: "\f5da";
+  color: #0a9ddb;
+	font-weight: bold;
+}
+
+.portal-institucional>a:hover, .portal-institucional>.active {
+    background-color: #f38e11;
+}
+
+.portal-institucional>a {
+    border-color: #f38e11;
+}
+
+.portal-institucional a::before{
+	content: "\f02d";
+  color: #f38e11;
+	font-weight: bold;
+}
+
+.portal-nac>a:hover, .portal-nac>.active {
+    background-color: #654984;
+}
+
+.portal-nac>a {
+    border-color: #654984;
+}
+
+.portal-nac a::before{
+	content: "\f5a0";
+  color: #654984;
+	font-weight: bold;
+}
+
+.portal-galeria>a:hover, .portal-galeria>.active {
+    background-color: #5aab3b;
+}
+
+.portal-galeria>a {
+    border-color: #5aab3b;
+}
+
+.portal-galeria a::before{
+	content: "\f302";
+  color: #5aab3b;
+	font-weight: bold;
+}
+
+.portal-publico>a:hover, .portal-publico>.active {
+    background-color: #8c2155;
+}
+
+.portal-publico>a {
+    border-color: #8c2155;
+}
+
+.portal-publico a::before{
+	content: "\f02d";
+  	color: #8c2155;
+	font-weight: bold;
+}
+
+.ob-saiba-mais a::before{
+	content: "\f05a";
+  	color: black;
+	font-weight: bold;
+}
+
+.portal-page{
+	border-top: 1rem solid;
+  	min-height: 100vh;
+	padding-top: 50px !important;
+}
+
+.portal-page-content {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.portal-page-title {
+    color: #fff;
+}
+
+.portal-page-title i{
+	margin-right: 1rem;
+}
+
+.bg-wine {
+    background-color: #8c2155 !important;
+}
+
+@media (min-width: 768px) {
+
+	.topo-portal{
+	align-items: center;
+	background: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, #f8f9fa,#dee2e6,#e9ecef);
+	box-shadow: 0 2px 3px rgba(0,0,0,.3);
+	flex-direction: row;
+	top: 0px;
+	z-index:3000;
+	}
+
+	.portal-logo {
+    flex-direction: column;
+	}
+
+	.portal #sidebar__esquerda {
+    display: none !important;
+	}
+
+	.nav-portal li {
+	width: 32%;
+	}
+
+	.nav-portal a{
+	padding:0 .5rem;
+	}
+
+	.mobile-open{
+	margin: 0;
+    background-color: transparent;
+	overflow-y: hidden;
+    padding: 0;
+	position: relative;
+	top:0;
+	}
+
+	.portal-page{
+		padding-top: 168px !important;
+	}
+
+	.portal-page p,
+	.portal-page h2,
+	.portal-page h3,
+	.portal-page h4,
+	.portal-page .btn {
+    	margin: 1.5rem 7rem;
+	}
+
+	.portal-page ul{
+		margin: 1.5rem 8rem;
+	}
+
+	.portal-welcome{
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 377px);
+		justify-content: center;
+	}
+
+	.portal-welcome > small {
+    	bottom: 10px;
+    	position: absolute;
+		text-align: right;
+}
+}

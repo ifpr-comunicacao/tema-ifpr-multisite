@@ -1,0 +1,736 @@
+/*
+Folha de estilos para o Catálogo de Laboratórios do ifpr
+Authors: Pedro Paulo B. Grein, Cremilton G. Fernandes
+*/
+
+/*------------------------------------*\
+ #TIPOGRAFIA
+\*------------------------------------*/
+.cat-lab-titulo {
+  align-self: flex-end;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0 3rem;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px black;
+}
+
+.cat-lab-titulo::after,
+.lab-entalhe::after {
+  content: " ";
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.cat-lab-titulo::after {
+  height: 2px;
+  margin-top: 0.5rem;
+}
+
+.cat-lab-sobre>p {
+  margin: 0;
+}
+
+.cat-lab-sobre a {
+  align-items: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  flex-direction: column;
+  font-size: 0.75rem;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.cat-lab-sobre a:hover {
+  background-color: #fff;
+  color: var(--verde-escuro);
+}
+
+.lab-entalhe>a,
+.lab-entalhe>a:visited {
+  color: #fff;
+}
+
+.lab-entalhe>a:hover {
+  text-decoration: none;
+}
+
+.laboratorio-content>h2+ul {
+  margin-bottom: 3rem;
+}
+
+.lab-area>h4 {
+  margin: 0;
+}
+
+.cat-lab-card-title {
+  border-radius: 0;
+  background-color: #fff;
+  color: var(--verde-escuro);
+  font-size: 1rem;
+  margin: 6rem 0 0 0;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.fechado>.cat-lab-card-title {
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.cat-lab-list li>a {
+  color: var(--cinza-escuro);
+}
+
+.cat-lab-page-title {
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+}
+
+/*------------------------------------*\
+ #ICONES
+\*------------------------------------*/
+.seta-baixo {
+  align-self: flex-end;
+  color: #fff;
+  filter: drop-shadow(1px 1px 4px black);
+  height: 4rem;
+  animation: seta infinite 0.25s alternate ease-in;
+  padding-bottom: 2rem;
+}
+
+@keyframes seta {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0.5rem);
+  }
+}
+
+
+
+.cat-lab-cover>a::before,
+.sobre>a::before,
+.cat-lab-list li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.sobre>a::before {
+  content: "\f05a";
+}
+
+.cat-lab-cover>a::before {
+  content: "\f053";
+}
+
+.cat-lab-list li::before {
+  content: "\f054";
+}
+
+.page-template-page-laboratorio-principal .icone-area::before {
+  color: var(--vermelho-escuro);
+  width: fit-content;
+}
+
+.icone-projetos::before,
+.icone-equipamentos::before,
+.icone-responsavel::before,
+.page-template-page-laboratorio-principal .icone-campus::before,
+.icone-seta-dir::before {
+  color: var(--verde-escuro);
+  width: fit-content;
+}
+
+.btn-slide {
+  width: 1.5rem;
+  background-color: #fff;
+  padding: 0.2rem 0.1rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.fechado>.btn-slide {
+  transform: rotate(180deg);
+}
+
+/*------------------------------------*\
+ #COMPONENTES
+\*------------------------------------*/
+.cat-lab-topo {
+  background-size: cover;
+  background-position-x: -30vw;
+  display: flex;
+  height: calc(100vh - 192px);
+  justify-content: center;
+  margin: 0 -1rem;
+}
+
+.cat-lab-topo-area,
+.cat-lab-topo-campus,
+.cat-lab-topo-lab {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 12rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.cat-lab-topo-campus h1,
+.cat-lab-topo-area h1 {
+  font-size: 1.5rem;
+}
+
+.cat-lab-sobre {
+  background-color: var(--verde-escuro);
+  border-radius: 0 0 0.25rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  margin: 0 -1rem;
+}
+
+.cat-lab-nav-abas-container {
+  background-color: var(--cinza);
+  border-radius: 0.25rem;
+  padding: 1rem 0.25rem 0.25rem 0.25rem;
+}
+
+.nav-tabs.aba-verde,
+.nav-tabs.aba-vermelho {
+  margin: 0;
+  border-color: var(--cinza);
+}
+
+.nav-link {
+  font-weight: bold;
+  margin: 0 0.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.aba-verde .nav-link {
+  background-color: var(--verde-escuro);
+  color: #fff;
+}
+
+.aba-vermelho .nav-link {
+  background-color: var(--vermelho-escuro);
+  color: #fff;
+}
+
+.tab-content {
+  background-color: #fff;
+  border-radius: .25rem;
+  padding: 2rem 1rem 0 1rem;
+}
+
+.tab-index {
+  font-weight: bold;
+  margin: 0 0 0.25rem 0.5rem;
+}
+
+.tab-content>.active {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tab-item:last-of-type {
+  padding-right: 0;
+}
+
+.tab-lista {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.tab-lista-item {
+  color: var(--cinza-escuro);
+  display: block;
+  padding: 0.75rem 0.5rem;
+}
+
+.tab-lista-item:visited {
+  color: var(--cinza-escuro);
+}
+
+.tab-lista-item:hover {
+  background-color: var(--cinza-claro);
+  border-radius: 0.25rem;
+  color: var(--verde-escuro);
+  text-decoration: none;
+}
+
+.lab-entalhe {
+  align-self: center;
+  background: rgb(28, 92, 39);
+  background: linear-gradient(0deg, rgba(28, 92, 39, 1) 82%, rgba(13, 42, 18, 1) 100%);
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.lab-legenda {
+  background-color: var(--verde-escuro);
+  border-radius: 0;
+  color: #fff;
+  text-align: right;
+  margin: 0 -15px;
+  padding: 0.5rem 1rem;
+  width: 100vw;
+}
+
+.lab-campus-sobretitulo {
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.lab-bloco-responsavel > div {
+  background-color: var(--cinza-claro);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.lab-bloco-responsavel .wp-block-image{
+  max-width:5rem;
+}
+
+.lab-bloco-responsavel .wp-block-group__inner-container p {
+  margin-bottom: 0.5rem;
+}
+
+.lab-bloco-responsavel .wp-block-group__inner-container p:first-child {
+  font-weight: bold;
+}
+
+.lab-campus-areas {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.area-pic {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.card-agrarias,
+.area-agrarias {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-agrarias.png);
+}
+
+.card-biologicas,
+.area-biologicas {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-biologicas.png);
+}
+
+.card-ciencias-ambientais,
+.area-ciencias-ambientais {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-ciencias-ambientais.jpg);
+}
+
+.card-engenharias,
+.area-engenharias {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-engenharia.png);
+}
+
+.card-exatas-e-da-terra,
+.area-exatas-e-da-terra {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-exatas-e-da-terra.jpg);
+}
+
+.card-humanas,
+.area-humanas {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+    url(../images/cat-lab/cat-lab-humanas.jpg);
+}
+
+.card-linguistica-letras-e-artes,
+.area-linguistica-letras-e-artes {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+  url(../images/cat-lab/cat-lab-linguistica-letras-e-artes.jpg);
+}
+
+.card-multidisciplinar,
+.area-multidisciplinar {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+  url(../images/cat-lab/cat-lab-multidisciplinar.jpg);
+}
+
+.card-robotica-mecatronica-e-automacao,
+.area-robotica-mecatronica-e-automacao {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+  url(../images/cat-lab/cat-lab-robotica.jpg);
+}
+
+.card-saude,
+.area-saude {
+  background-image:
+  linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+  url(../images/cat-lab/cat-lab-saude.jpg);
+}
+
+.card-sociais-aplicadas,
+.area-sociais-aplicadas {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%),
+  url(../images/cat-lab/cat-lab-sociais-aplicadas.jpg);
+}
+
+.card-assis-chateaubriand {
+  background: url(../images/cat-lab/cat-lab-campus-assis-chateaubriand.jpg) no-repeat;
+}
+
+.card-astorga {
+  background: url(../images/cat-lab/cat-lab-campus-astorga.jpg) no-repeat;
+}
+
+.card-campo-largo {
+  background: url(../images/cat-lab/cat-lab-campo-largo.jpg) no-repeat;
+}
+
+.card-capanema {
+  background: url(../images/cat-lab/cat-lab-campus-capanema.jpg) no-repeat;
+}
+
+.card-cascavel {
+  background: url(../images/cat-lab/cat-lab-campus-cascavel.jpg) no-repeat;
+}
+
+.card-colombo {
+  background: url(../images/cat-lab/cat-lab-campus-colombo.jpg) no-repeat;
+}
+
+.card-coronel-vivida {
+  background: url(../images/cat-lab/cat-lab-campus-coronel-vivida.jpg) no-repeat;
+}
+
+.card-curitiba {
+  background: url(../images/cat-lab/cat-lab-campus-curitiba.jpg) no-repeat;
+}
+
+.card-foz-do-iguacu {
+  background: url(../images/cat-lab/cat-lab-campus-foz-do-iguacu.jpg) no-repeat;
+}
+
+.card-goioere {
+  background: url(../images/cat-lab/cat-lab-campus-goioere.jpg) no-repeat;
+}
+
+.card-irati {
+  background: url(../images/cat-lab/cat-lab-campus-irati.jpg) no-repeat;
+}
+
+.card-ivaipora {
+  background: url(../images/cat-lab/cat-lab-campus-ivaipora.jpg) no-repeat;
+}
+
+.card-jacarezinho {
+  background: url(../images/cat-lab/cat-lab-campus-jacarezinho.jpg) no-repeat;
+}
+
+.card-jaguariaiva {
+  background: url(../images/cat-lab/cat-lab-campus-jaguariaiva.jpg) no-repeat;
+}
+
+.card-londrina {
+  background: url(../images/cat-lab/cat-lab-campus-londrina.jpg) no-repeat;
+}
+
+.card-paranagua {
+  background: url(../images/cat-lab/cat-lab-campus-paranagua.jpg) no-repeat;
+}
+
+.card-palmas {
+  background: url(../images/cat-lab/cat-lab-campus-palmas.jpg) no-repeat;
+}
+
+.card-paranavai {
+  background: url(../images/cat-lab/cat-lab-campus-paranavai.jpg) no-repeat;
+}
+
+.card-pitanga {
+  background: url(../images/cat-lab/cat-lab-campus-pitanga.jpg) no-repeat;
+}
+
+.card-pinhais {
+  background: url(../images/cat-lab/cat-lab-campus-pinhais.jpg) no-repeat;
+}
+
+.card-quedas-do-iguacu {
+  background: url(../images/cat-lab/cat-lab-campus-quedas-do-iguacu.jpg) no-repeat;
+}
+
+.card-telemaco-borba {
+  background: url(../images/cat-lab/cat-lab-campus-telemaco-borba.jpg) no-repeat;
+}
+
+.card-umuarama {
+  background: url(../images/cat-lab/cat-lab-campus-umuarama.jpg) no-repeat;
+}
+
+.card-uniao-da-vitoria {
+  background: url(../images/cat-lab/cat-lab-campus-uniao-da-vitoria.jpg) no-repeat;
+}
+
+.lab-area {
+  flex: 1 1 100%;
+  border: solid 2px var(--cinza-claro);
+  border-radius: .25rem;
+  margin: 0 0 1rem 0;
+}
+
+.wp-block-image {
+  align-self: center;
+}
+
+.lab-responsavel-dados {
+  flex: 1 0 66%;
+  padding-left: 1rem;
+}
+
+.lab-responsavel-dados>p {
+  margin: 0;
+}
+
+.icone-responsavel {
+  display: block;
+  flex-basis: 100%;
+  margin-top: 0;
+}
+
+aside {
+  margin-top: 40px;
+}
+
+/*------------------------------------*\
+ #LISTAS
+\*------------------------------------*/
+
+.cat-lab-menu-aside{
+  margin-bottom: 0;
+  list-style:none;
+}
+
+.cat-lab-menu-aside li a{
+  display: block;
+  line-height: 1.25;
+  padding: 0.5rem 0;
+}
+
+.cat-lab-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.cat-lab-list>li {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.cat-lab-list>li:last-of-type {
+  margin-bottom: 0;
+}
+
+.icone-mais {
+  background-color: var(--verde-escuro);
+  border: solid 1px #fff;
+  border-radius: 0.25rem;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+}
+
+.icone-mais:visited {
+  color: #fff;
+}
+
+.icone-mais:hover{
+  color:var(--verde-escuro);
+  background-color: #fff;
+  border: solid 1px var(--verde-escuro);
+  text-decoration: none;
+}
+
+/*------------------------------------*\
+ #GERAL
+\*------------------------------------*/
+
+.cat-lab-btn {
+  background-size: cover;
+  background-position-y: -4px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/*------------------------------------*\
+ #COMPORTAMENTO
+\*------------------------------------*/
+.fechado+.cat-lab-list {
+  display: none;
+}
+
+/* Very Small devices (landscape phones, 576px and up) */
+@media (min-width: 375px) {
+
+  .nav-link {
+    font-weight: bold;
+    margin: 0 0.5rem;
+    padding: auto;
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .lab-area {
+    flex: 0 1 calc(50% - 1rem);
+    margin: 0 1rem 1rem 0;
+  }
+
+  .lab-area:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .cat-lab-btn {
+    background-size: contain;
+    border-radius: 0.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width:768px) {
+
+  /*------------------------------------*\
+ #COMPONENTES
+\*------------------------------------*/
+  .cat-lab-titulo {
+    align-self: center;
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .cat-lab-topo {
+    background-position-x: center;
+    height: 320px;
+    justify-content: center;
+    margin: 0 -1rem;
+  }
+
+  .cat-lab-topo {
+    margin: auto;
+  }
+
+  .cat-lab-topo-area,
+  .cat-lab-topo-campus,
+  .cat-lab-topo-lab {
+    height: 20rem;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .cat-lab-topo-area h1,
+  .cat-lab-topo-campus h1 {
+    font-size: 2rem;
+  }
+
+  .tab-content>.active {
+    flex-direction: row;
+  }
+
+  .cat-lab-sobre {
+    padding: 0.5rem;
+    margin: auto;
+  }
+
+  .tab-lista {
+    display: inline-flex;
+  }
+
+  .nav-tabs.aba-verde {
+    margin: 0 0.5rem;
+  }
+
+  .tab-item {
+    padding-right: 3rem;
+  }
+
+  .tab-lista li {
+    padding-right: 1rem;
+  }
+
+  .lab-legenda {
+    border-radius: 0 0 0.25rem 0.25rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .seta-baixo {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 880px and up) */
+@media (min-width:880px) {
+
+  /*------------------------------------*\
+ #COMPONENTES
+\*------------------------------------*/
+
+  .lab-area {
+    flex: 0 1 calc(33.97% - 1rem);
+    margin: 0 1rem 1rem 0;
+  }
+
+  .lab-area:nth-child(2n) {
+    margin-right: 1rem;
+  }
+
+  .lab-area:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .tab-lista-item {
+    padding: 0.25rem 0.5rem;
+  }
+
+}

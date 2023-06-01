@@ -1,0 +1,106 @@
+@use "../abstracts" as *;
+
+/*------------------------------------
+
+Cartao
+
+------------------------------------*/
+.cartao {
+    border: 1px solid var(--clr-grays-light);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      margin: 0;
+      padding: 1rem;
+    }
+
+    p{
+      padding:0 1rem;
+    }
+
+    &-icone {
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    &-icone img {
+      display: block;
+      height: 2rem;
+    }
+
+    &-titulo {
+      color: var(--clr-greens-dark);
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 1rem 0.5rem 1rem;
+    }
+
+    &-texto-pequeno {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      margin-left: 0;
+      margin-right:0;
+    }
+
+    &-detalhes {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      margin-left: 0;
+      margin-right:0;
+      margin-bottom: 0;
+    }
+
+    &-botao {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 1rem 0;
+    }
+
+    &-botao a {
+      color: var(--clr-greens-dark);
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 0;
+      margin-right:0;
+    }
+
+    .baixar a {
+      background: url(/wp-content/uploads/2021/09/arrow-down-solid.svg) right no-repeat;
+      background-size: 0.75rem;
+      padding-right: 1.25rem;
+      width: fit-content;
+    }
+    
+    .saber-mais a {
+      background: url(/wp-content/uploads/2021/09/arrow-dir.svg) right no-repeat;
+      background-size: 0.75rem;
+      padding-right: 1.25rem;
+      width: fit-content;
+    }
+
+    .wp-block-group__inner-container {
+      margin: 0 !important;
+      display:flex;
+      flex-direction:column;
+      height:100%;
+      width: 100%;
+    }
+  }
+
+  .card{
+    h3{
+      font-size: 1.25rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

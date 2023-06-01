@@ -1,0 +1,257 @@
+		.hero-covid {
+			background: url(../images/covid/topo-covid-bkg.png) repeat-y top center;
+			height: calc(100vh - 167px);
+			justify-content: center;
+			padding-top: 1rem;
+		}
+		
+		.hero-covid__title {
+			color: #fff;
+			font-size: 4.25rem;
+			line-height: 2rem;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		
+		.hero-covid:after {
+			content: ' ';
+			background-image: url(../images/covid/ifpr-covid.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: block;
+			position: absolute;
+			width: calc(100vw - 2rem);
+			height: 218px;
+			left: 0.5rem;
+			top: 145px;
+		}
+		
+		.hero-covid__title-bkg {
+			align-self: flex-start;
+			background-color: #F37350;
+			border-bottom-right-radius: 2rem;
+			padding: 1.75rem 1.5rem .75rem 1.75rem;
+			position: relative;
+		}
+		
+		.hero-covid__title>span {
+			font-size: 1.5rem;
+		}
+		
+		.hero-covid__title:before {
+			content: ' ';
+			background-color: #fff;
+			display: block;
+			height: 82px;
+			width: 4px;
+			position: absolute;
+			left: 1rem;
+			top: 1.25rem;
+		}
+		
+		.covid__title {
+			background-color: #F37350;
+			border-bottom-right-radius: 2rem;
+			border-top-left-radius: 1rem;
+			color: #fff;
+			display: -webkit-inline-box;
+			display: inline-block;
+			margin: 0 0 0 -1rem;
+			padding: 0.5rem 1rem;
+		}
+		
+		.covid {
+			border-radius: 1rem;
+			padding:0;
+			margin: -2rem 0 0 0;
+		}
+		
+		.covid-blue {
+			background: linear-gradient(89.6deg, #2F80ED 38.66%, rgba(255, 255, 255, 0) 99.89%), #C0EFF2;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			color: #fff;
+			padding: 2rem;
+		}
+		
+		.covid-blue p {
+			margin-top: 1rem;
+			font-size: 1.3125rem;
+		}
+		
+		.covid-white {
+			background: url(../images/covid/topo-covid-bkg.png) repeat-y;
+			background-size: auto;
+			margin-top: 0;
+		}
+		
+		.covid-news__tag {
+			font-size: 0.75rem;
+			margin: 0.5rem 0 0.25rem 0;
+		}
+		
+		.covid-news__tag a {
+			color: var(--cinza-escuro);
+		}
+		
+		.covid-news {
+			background-color: #f2f2f2;
+			padding: 3rem 1rem 1rem 1rem;
+		}
+		
+		.covid-news__news-title {
+			line-height: 1.15rem;
+			margin-bottom: 2rem;
+		}
+		
+		.covid-news__news-title>a {
+			color: var(--cinza-escuro);
+			font-size: 1rem;
+		}
+		
+		.covid-ul {
+			display: flex;
+			list-style: none;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+		
+		.covid-ul>li {
+			color: #004667;
+			display: flex;
+			font-weight: bold;
+			padding: 0.5rem 0;
+		}
+		
+		.covid-ul>li:before {
+			content: ' ';
+			display: inline-flex;
+			padding: 2.1rem;
+		}
+		
+		.covid-ul>li:before {
+			background: url(../images/covid/lava-mao.png) no-repeat top center;
+		}
+		
+		.covid-ul>li:nth-child(2):before {
+			background: url(../images/covid/aperto-maos.png) no-repeat top center;
+		}
+		
+		.covid-ul>li:nth-child(3):before {
+			background: url(../images/covid/espirrar.png) no-repeat top center;
+		}
+		
+		.covid-ul>li:nth-child(4):before {
+			background: url(../images/covid/objetos-pessoais.png) no-repeat top center;
+		}
+		
+		.covid-ul>li:nth-child(5):before {
+			background: url(../images/covid/sair-casa.png) no-repeat top center;
+		}
+		
+		.covid-ul>li:nth-child(6):before {
+			background: url(../images/covid/ambientes-ventilados.png) no-repeat top center;
+		}
+		
+		.covid-contato {
+			background-color: #F37350;
+			border-bottom-left-radius: 1rem;
+			border-bottom-right-radius: 1rem;
+			color: #fff;
+			display: flex;
+		  justify-content: center;
+		  flex-direction: column;
+		}
+		
+		.covid-contato>a {
+			color: #fff;
+		}
+		
+		.btn-covid>a{
+		color:#fff;
+		}
+		
+		.btn-covid>a:visited{
+		color:#fff;
+		}
+		
+		.covid.protocolo{
+			background: #d4d5d5 url(/wp-content/uploads/2020/09/protocolo-covid-bkg.png) center 1rem no-repeat;
+			background-size: 100%;
+			padding-top: 60%;
+			text-align: center;
+		}
+
+.covid.plano{
+			background: #d4d5d5 url(/wp-content/uploads/2022/01/plano-contigencia-covid.jpg) center 1rem no-repeat;
+			background-size: 100%;
+			padding-top: 60%;
+			text-align: center;
+		}
+
+
+		@media (min-width:768px) {
+		
+			.hero-covid {
+				background: url(../images/covid/topo-covid-bkg.png) no-repeat top center;
+				height: 240px;
+				justify-content:flex-start;
+			}
+		
+			.hero-covid:after {
+				width: 326px;
+				height: 218px;
+				left: 35%;
+				top: 0.75rem;
+			}
+		
+			.hero-covid__title-bkg {
+				align-self: center;
+			}
+		
+			.hero-covid__title>span {
+				font-size: 1.75rem;
+			}
+		
+			.covid {
+				padding: 3rem 1rem 2rem 1rem;
+			}
+		
+			.covid-blue {
+				padding: 2rem 2rem 0 2rem;
+			}
+		
+			.covid-white {
+				background: url(../images/covid/topo-covid-bkg.png) no-repeat;
+				background-size: cover;
+			}
+		
+			.covid-ul>li {
+				padding: 0.5rem 0;
+				width: 50%;
+			}
+		
+			.covid-news__news-title {
+				line-height: 1.15rem;
+			}
+		
+			.covid-contato {
+			  flex-direction: row;
+			}
+			
+			.covid.protocolo{
+			background: #d4d5d5 url(/wp-content/uploads/2020/09/protocolo-covid-bkg.png) left no-repeat;
+			background-size: 50%;
+			padding-left:50%;
+			padding-top: 3rem;
+			text-align: center;
+		}
+          .covid.plano {
+		        background: #d4d5d5 url(/wp-content/uploads/2022/01/plano-contigencia-covid.jpg) left no-repeat;
+		        background-size: 50%;
+		        padding-left: 50%;
+		        padding-top: 3rem;
+		        text-align: center;
+		    }
+		}
